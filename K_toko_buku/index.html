@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokoBuku Hidayah - Your Trusted Islamic & Educational Bookstore</title>
+    <meta name="description" content="TokoBuku Hidayah - Trusted bookstore specializing in Islamic books, educational materials, and literature. Located at Plaza Indonesia, Jakarta. Rating 4.8/5 from 390+ reviews.">
+    <meta name="keywords" content="Islamic books, educational books, bookstore Jakarta, Plaza Indonesia, Quran, Hadith, children books, literature">
+    <meta name="author" content="TokoBuku Hidayah">
+    <meta property="og:title" content="TokoBuku Hidayah - Islamic & Educational Bookstore">
+    <meta property="og:description" content="Trusted bookstore at Plaza Indonesia specializing in Islamic books and educational materials. 4.8/5 rating from 390+ customers.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>TokoBuku Hidayah</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#catalog" class="nav-link">Books</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#location" class="nav-link">Location</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="cart-icon" id="cart-toggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">TokoBuku Hidayah</h1>
+                <p class="hero-subtitle">Enlightening Minds Through Knowledge & Faith</p>
+                <div class="rating-section">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="rating-text">4.8 out of 5 (390+ reviews)</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#catalog" class="btn btn-primary">Order Now</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-book-reader"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About TokoBuku Hidayah</h2>
+                <p>Your trusted partner in Islamic education and literature</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>TokoBuku Hidayah has been serving the Jakarta community as a premier destination for Islamic books, educational materials, and quality literature. Located in the heart of Jakarta at Plaza Indonesia, we are committed to spreading knowledge and promoting literacy through our carefully curated collection.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-mosque"></i>
+                            <h3>Islamic Literature</h3>
+                            <p>Comprehensive collection of Islamic books, Quran, Hadith, and religious studies</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Educational Materials</h3>
+                            <p>Quality educational resources for students of all ages and academic levels</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h3>Trusted Service</h3>
+                            <p>4.8-star rating from 390+ satisfied customers speaks to our commitment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Book Catalog Section -->
+    <section id="catalog" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Books</h2>
+                <p>Discover our carefully curated collection of Islamic and educational books</p>
+            </div>
+            
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All Books</button>
+                <button class="filter-btn" data-category="islamic">Islamic</button>
+                <button class="filter-btn" data-category="educational">Educational</button>
+                <button class="filter-btn" data-category="children">Children</button>
+                <button class="filter-btn" data-category="literature">Literature</button>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Convenient ways to get your books</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-store"></i>
+                    <h3>In-Store Pickup</h3>
+                    <p>Visit our store at Plaza Indonesia Lower Basement and browse our complete collection. Our knowledgeable staff is ready to help you find the perfect books.</p>
+                    <ul>
+                        <li>Browse physical books before buying</li>
+                        <li>Expert recommendations from our staff</li>
+                        <li>Immediate availability</li>
+                        <li>No shipping fees</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Delivery Service</h3>
+                    <p>Order online and have your books delivered to your doorstep. We offer reliable delivery service throughout Jakarta and surrounding areas.</p>
+                    <ul>
+                        <li>Fast and reliable delivery</li>
+                        <li>Secure packaging</li>
+                        <li>Order tracking available</li>
+                        <li>Contact us for delivery rates</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ordering-info">
+                <h3>How to Order</h3>
+                <div class="order-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <p>Contact us via WhatsApp or phone</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <p>Tell us which books you need</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <p>Choose pickup or delivery</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <p>Complete your order</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Our Store</h2>
+                <p>Find us at Plaza Indonesia, Jakarta</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>Jl. M.H. Thamrin No.28–30, RT.9/RW.5<br>
+                        Gondangdia, Menteng District<br>
+                        Central Jakarta City<br>
+                        Special Capital Region of Jakarta 10350<br>
+                        <strong>Plaza Indonesia – Lower Basement (LB) Floor</strong></p>
+                        <p class="location-code">Location Code: RR4C+MH Gondangdia, Central Jakarta</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Opening Hours</h3>
+                        <p><strong>Open Daily</strong><br>
+                        Closes at 10:00 PM (22:00)</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Contact</h3>
+                        <p>Phone / WhatsApp:<br>
+                        <a href="tel:+6287782866044">+62 877-8286-6044</a></p>
+                        <a href="https://wa.me/6287782866044" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666!2d106.8219!3d-6.1944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sPlaza%20Indonesia!5e0!3m2!1sen!2sid!4v1234567890"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch for book inquiries and orders</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone & WhatsApp</h3>
+                        <a href="tel:+6287782866044">+62 877-8286-6044</a>
+                        <a href="https://wa.me/6287782866044" class="contact-btn whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Business Hours</h3>
+                        <p>Open Daily<br>Closes at 10:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Quick Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your message or book inquiry..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Drawer -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3 class="cart-title">Shopping Cart</h3>
+            <button class="cart-close" id="cart-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart" id="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Your cart is empty</h3>
+                <p>Add some books to get started!</p>
+            </div>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display: none;">
+            <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">Rp 0</span>
+            </div>
+            <div class="cart-actions">
+                <button class="cart-btn cart-btn-primary" id="checkout-btn">
+                    <i class="fas fa-credit-card"></i> Checkout
+                </button>
+                <a href="#catalog" class="cart-btn cart-btn-secondary" id="continue-shopping">
+                    Continue Shopping
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toast-message">Item added to cart!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-book-open"></i>
+                        <span>TokoBuku Hidayah</span>
+                    </div>
+                    <p>Enlightening minds through knowledge and faith. Your trusted Islamic and educational bookstore in Jakarta.</p>
+                    <div class="rating-footer">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>4.8/5 from 390+ reviews</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#catalog">Books</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Plaza Indonesia - Lower Basement</p>
+                    <p><i class="fas fa-phone"></i> +62 877-8286-6044</p>
+                    <p><i class="fas fa-clock"></i> Open Daily until 10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TokoBuku Hidayah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

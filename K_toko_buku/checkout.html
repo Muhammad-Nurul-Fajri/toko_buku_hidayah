@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - TokoBuku Hidayah</title>
+    <meta name="description" content="Complete your book order at TokoBuku Hidayah - Islamic and educational bookstore in Jakarta">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>TokoBuku Hidayah</span>
+            </a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Back to Store</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-header">
+                <h1>Checkout</h1>
+                <p>Complete your order details</p>
+            </div>
+
+            <div class="checkout-content">
+                <div class="checkout-form">
+                    <form id="checkout-form">
+                        <div class="form-section">
+                            <h3><i class="fas fa-user"></i> Customer Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customer-name">Full Name *</label>
+                                    <input type="text" id="customer-name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customer-phone">Phone / WhatsApp *</label>
+                                    <input type="tel" id="customer-phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-email">Email (Optional)</label>
+                                <input type="email" id="customer-email" name="email">
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3><i class="fas fa-truck"></i> Delivery Method</h3>
+                            <div class="delivery-options">
+                                <label class="delivery-option">
+                                    <input type="radio" name="delivery" value="pickup" checked>
+                                    <div class="option-content">
+                                        <div class="option-header">
+                                            <i class="fas fa-store"></i>
+                                            <span>In-Store Pickup</span>
+                                            <span class="option-price">FREE</span>
+                                        </div>
+                                        <p>Pick up your order at Plaza Indonesia - Lower Basement</p>
+                                    </div>
+                                </label>
+                                <label class="delivery-option">
+                                    <input type="radio" name="delivery" value="delivery">
+                                    <div class="option-content">
+                                        <div class="option-header">
+                                            <i class="fas fa-truck"></i>
+                                            <span>Home Delivery</span>
+                                            <span class="option-price">Contact for rates</span>
+                                        </div>
+                                        <p>We'll deliver to your address in Jakarta area</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-section" id="delivery-address" style="display: none;">
+                            <h3><i class="fas fa-map-marker-alt"></i> Delivery Address</h3>
+                            <div class="form-group">
+                                <label for="address">Full Address *</label>
+                                <textarea id="address" name="address" rows="3" placeholder="Street address, building, apartment number"></textarea>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" value="Jakarta">
+                                </div>
+                                <div class="form-group">
+                                    <label for="postal-code">Postal Code *</label>
+                                    <input type="text" id="postal-code" name="postal_code">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3><i class="fas fa-comment"></i> Additional Notes</h3>
+                            <div class="form-group">
+                                <textarea id="notes" name="notes" rows="3" placeholder="Any special instructions or requests..."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-items" id="summary-items">
+                        <!-- Items will be loaded here -->
+                    </div>
+                    <div class="summary-totals">
+                        <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span id="summary-subtotal">Rp 0</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Delivery:</span>
+                            <span id="summary-delivery">FREE</span>
+                        </div>
+                        <div class="total-row total-final">
+                            <span>Total:</span>
+                            <span id="summary-total">Rp 0</span>
+                        </div>
+                    </div>
+                    <button type="submit" form="checkout-form" class="btn btn-accent checkout-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Order via WhatsApp
+                    </button>
+                    <a href="index.html#catalog" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i>
+                        Continue Shopping
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-book-open"></i>
+                        <span>TokoBuku Hidayah</span>
+                    </div>
+                    <p>Enlightening minds through knowledge and faith.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Plaza Indonesia - Lower Basement</p>
+                    <p><i class="fas fa-phone"></i> +62 877-8286-6044</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TokoBuku Hidayah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
